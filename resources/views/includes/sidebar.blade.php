@@ -222,7 +222,7 @@
                             <ul x-cloak="" x-show="activeDropdown === 'invoice'" x-collapse=""
                                 class="sub-menu text-gray-500">
                                 <li>
-                                    <a href="{{ route('manageUser') }}" class="{{ request()->routeIs('manageUser') ? 'active' : '' }}">Manage User</a>
+                                    <a href="{{ route('manageUser.index') }}" class="{{ request()->routeIs('manageUser.index') ? 'active' : '' }}">Manage User</a>
                                 </li>
                                 <li>
                                     <a href="apps-invoice-preview.html">Preview</a>

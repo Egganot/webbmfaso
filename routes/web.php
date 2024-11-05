@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ManageUserController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -10,7 +11,5 @@ Route::get('/analytics', function () {
     return view('menus.analytics.analyticsIndex');
 })->name('analytics');
 
-Route::get('/manageUser', function () {
-    return view('menus.manageUser.manageUserIndex');
-})->name('manageUser');
+Route::resource('/manageUser', ManageUserController::class)->names('manageUser');
 
